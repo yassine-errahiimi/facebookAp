@@ -1,0 +1,175 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+    color: #1c1e21;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Header Section */
+.heading-section {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.logo-img {
+    width: 180px;
+    margin-bottom: 10px;
+}
+
+.a-ri8 span {
+    font-size: 18px;
+    color: #65676b;
+}
+
+/* Form Styling */
+.form {
+    background-color: white;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    width: 100%;
+    max-width: 400px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.a-email, .a-pss {
+    width: 100%;
+    padding: 15px;
+    font-size: 14px;
+    border: 1px solid #dddfe2;
+    border-radius: 5px;
+    background-color: #f5f6f7;
+}
+
+.a-sub {
+    padding: 12px;
+    background-color: #1877f2;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.a-sub:hover {
+    background-color: #166fe5;
+}
+
+.a-link {
+    text-align: center;
+    display: block;
+    color: #1877f2;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.a-link:hover {
+    text-decoration: underline;
+}
+
+.a-hr {
+    border: 0;
+    border-top: 1px solid #dddfe2;
+}
+
+.a-but {
+    padding: 12px;
+    background-color: #42b72a;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.a-but:hover {
+    background-color: #36a420;
+}
+
+.create-page {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.a-href {
+    color: #1877f2;
+    text-decoration: none;
+}
+
+.a-href:hover {
+    text-decoration: underline;
+}
+
+/* Footer Section */
+.footer {
+    width: 100%;
+    background-color: #f5f6f7;
+    padding: 40px 0;
+}
+
+#pageFooter {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#pageFooter ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+#pageFooter ul li {
+    font-size: 14px;
+    color: #65676b;
+}
+
+#pageFooter ul li a {
+    color: #65676b;
+    text-decoration: none;
+}
+
+#pageFooter ul li a:hover {
+    text-decoration: underline;
+}
+
+#line {
+    margin-top: 20px;
+    border-top: 1px solid #dddfe2;
+}
+
+.copyright {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #65676b;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .main {
+        padding: 15px;
+    }
+
+    .form {
+        padding: 30px;
+    }
+}

